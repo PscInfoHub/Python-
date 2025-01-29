@@ -1,0 +1,90 @@
+# Python Operators and Data Types
+
+# === Data Types ===
+# 1. Numeric (int, float, complex)
+int_num = 10         # Integer
+float_num = 10.5     # Float
+complex_num = 3 + 4j # Complex number
+
+print("Integer:", int_num)
+print("Float:", float_num)
+print("Complex:", complex_num)
+
+# 2. String
+string_var = "Hello, Python!"
+print("String:", string_var)
+
+# 3. List
+list_var = [1, 2, 3, "Python", 5.5]
+print("List:", list_var)
+
+# 4. Tuple
+tuple_var = (1, 2, 3, "Python")
+print("Tuple:", tuple_var)
+
+# 5. Dictionary
+dict_var = {"name": "Python", "type": "Programming Language"}
+print("Dictionary:", dict_var)
+
+# 6. Set
+set_var = {1, 2, 3, 4}
+print("Set:", set_var)
+
+# 7. Boolean
+bool_var = True
+print("Boolean:", bool_var)
+
+# === Operators ===
+# 1. Arithmetic Operators
+print("Arithmetic Operators:")
+print("Addition:", int_num + float_num)
+print("Subtraction:", int_num - float_num)
+print("Multiplication:", int_num * float_num)
+print("Division:", int_num / float_num)
+print("Modulus:", int_num % 3)
+print("Exponentiation:", int_num ** 2)
+print("Floor Division:", int_num // float_num)
+
+# 2. Comparison Operators
+print("\nComparison Operators:")
+print("Equal:", int_num == 10)
+print("Not Equal:", int_num != 10)
+print("Greater Than:", int_num > 5)
+print("Less Than:", int_num < 20)
+print("Greater or Equal:", int_num >= 10)
+print("Less or Equal:", int_num <= 10)
+
+# 3. Logical Operators
+print("\nLogical Operators:")
+print("AND:", True and False)
+print("OR:", True or False)
+print("NOT:", not True)
+
+# 4. Bitwise Operators
+print("\nBitwise Operators:")
+print("AND:", 5 & 3)  # 0101 & 0011 = 0001
+print("OR:", 5 | 3)   # 0101 | 0011 = 0111
+print("XOR:", 5 ^ 3)  # 0101 ^ 0011 = 0110
+print("Left Shift:", 5 << 1) # 0101 << 1 = 1010
+print("Right Shift:", 5 >> 1) # 0101 >> 1 = 0010
+
+# 5. Assignment Operators
+print("\nAssignment Operators:")
+num = 10
+num += 5  # num = num + 5
+print("Add and Assign:", num)
+num *= 2  # num = num * 2
+print("Multiply and Assign:", num)
+
+# 6. Membership Operators
+print("\nMembership Operators:")
+print("In:", "Python" in list_var)
+print("Not In:", "Java" not in list_var)
+
+# 7. Identity Operators
+print("\nIdentity Operators:")
+x = [1, 2, 3]
+y = x
+z = [1, 2, 3]
+print("Is:", x is y)      # True, as y points to the same object as x
+print("Is Not:", x is not z) # True, as z is a different object
